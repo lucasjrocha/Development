@@ -11,12 +11,15 @@ namespace ConsoleApp1
         //- Enum serve para enumerar, procurar na documentação para maiores detalhes Lucas
         enum Cor { Azul, Verde, Amarelo, Vermelho };
 
-        enum Opcoes { Criar, Deletar, Editar, Listar, Atualizar }
+        enum Opcao { Criar, Deletar, Editar, Listar, Atualizar }
 
         static void Main(string[] args)
          {
             Console.WriteLine("Selecione uma das opções abaixo: ");
             Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+            
+
 
             Console.ReadLine();
 
