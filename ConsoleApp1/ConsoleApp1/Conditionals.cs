@@ -10,18 +10,51 @@ namespace ConsoleApp1
     {
         //- Enum serve para enumerar, procurar na documentação para maiores detalhes Lucas
         enum Cor { Azul, Verde, Amarelo, Vermelho };
-
-        enum Opcoes { Criar, Deletar, Editar, Listar, Atualizar }
+        
+        //caso atribua um numero à variável que está dentro do enum a posicao das proximas variaveis iniciará a partir desta.
+        enum Opcao { Criar = 1, Deletar, Editar, Listar, Atualizar }
+        
 
         static void Main(string[] args)
          {
-            Console.WriteLine("Selecione uma das opções abaixo: ");
-            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            //// - Estrutura de repetição while, enquanto a condição dentro do () for verdadeira
+            ////continuará no laço de repetição, seu teste é realizado no início da condicional.
+            //int contador = 0;
 
-            Console.ReadLine();
+            //while (contador < 21)
+            //{
+            //    Console.WriteLine(contador + 1);
+            //    Console.WriteLine("Rodando o while");
+            //    contador++;
+            //}
 
+            ////- Exemplo de Switch e Enum sendo utilizados.
+            //Console.WriteLine("Selecione uma das opções abaixo: ");
+            //Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            //int index = int.Parse(Console.ReadLine());
+            //Opcao opcaoSelecionada = (Opcao)index;
 
-
+            //switch (opcaoSelecionada)
+            //{
+            //    case Opcao.Criar:
+            //        Console.WriteLine("Você quer criar algo.");
+            //        break;
+            //    case Opcao.Deletar:
+            //        Console.WriteLine("Você quer deletar algo.");
+            //        break;
+            //    case Opcao.Editar:
+            //        Console.WriteLine("Você quer editar algo.");
+            //        break;
+            //    case Opcao.Listar:
+            //        Console.WriteLine("Você quer listar algo.");
+            //        break;
+            //    case Opcao.Atualizar:
+            //        Console.WriteLine("Você quer atualizar algo.");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Opção não encontrada.");
+            //        break;
+            //}
 
 
             //- Condicionais de if/else:
